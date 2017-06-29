@@ -14,6 +14,25 @@ public class Butterfly extends Insect {
         this.wings_color = wings_color;
     }
 
+    public String getWings_color() {
+        return wings_color;
+    }
+
+    public void setWings_color(String wings_color) {
+        this.wings_color = wings_color;
+    }
+
+    public int getDayOfLive() {
+        return dayOfLive;
+    }
+
+    public void setDayOfLive(int dayOfLive) {
+        if (dayOfLive < MIN_DAYS) {
+            return;
+        }
+        this.dayOfLive = dayOfLive;
+    }
+
     private void bringLove() {
         System.out.println("Listen to love (please visit this link https://www.youtube.com/watch?v=waU75jdUnYw)");
     }
